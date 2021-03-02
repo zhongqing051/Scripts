@@ -60,12 +60,13 @@ if (!$.isNode() && ks_tokens.indexOf('&') == -1) {
    }; 
      $.desc = `【正式版】:\n  `+offic_info+"\n  "+offic_sign +'\n'
      $.desc += `【极速版】:\n  `+speed_rewards+"\n  "+speed_info;
-    if(offici_code==1){
+  //  if(offici_code==1){
      $.msg($.name+"  昵称:"+nickname,"",$.desc);
      await notify.sendNotify($.name+ " " +nickname,$.desc)
-    } else {
-     $.log( "~~~~~~~~~~~~~~~~~\n 昵称:" +nickname+"\n"+ $.desc)  
-    }
+   // } 
+	    //else {
+    // $.log( "~~~~~~~~~~~~~~~~~\n 昵称:" +nickname+"\n"+ $.desc)  
+   // }
    }
  }
 })()
